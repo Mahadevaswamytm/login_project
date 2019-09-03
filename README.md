@@ -43,6 +43,6 @@ For further reference, please consider the following sections:
   1.Why the login for user1@gmail.com fails :It is returning multiple values ,because of this it is not able to login.
   2.Fixes
      a. I have changed the retrieving query in UserEntityDao.java, by limiting to 1 row we can resolve this issue.
-     b. We can make the return object as List of objects in UserEntityDao.java instaed of single UserEntity object.
+     b. We can make the return object as List of objects in UserEntityDao.java instead of single UserEntity object.
      c. We can restrict duplicates in the Entity class itself by making userId as Unique ( @Column(name = "LOGIN_ID" unique = true))
 
